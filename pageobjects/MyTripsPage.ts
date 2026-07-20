@@ -16,13 +16,11 @@ export class MyTripsPage {
 
     async verifyBookingStatus(status: string) {
         await expect(this.bookingStatus()).toHaveText(status);
-        await attachScreenshot(this.page, 'Successful Booking Screenshot');
+        await attachScreenshot(this.page, `${status}_screenshot`);
     }
 
     async cancelBooking() {
         await this.cancelBookingButton().click();
-        await attachScreenshot(this.page, 'After Canceling Booking Screenshot');
-
     }
 
 }

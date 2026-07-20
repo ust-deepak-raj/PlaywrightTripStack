@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Assertion Failures",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*expect.*"
+  },
+  {
+    "name": "Timeout Failures",
+    "matchedStatuses": ["failed", "broken"],
+    "messageRegex": ".*Timeout.*|.*timed out.*"
+  },
+  {
+    "name": "Element Not Found",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*locator.*|.*toBeVisible.*|.*No node found.*"
+  },
+  {
+    "name": "Network / Server Errors",
+    "matchedStatuses": ["failed", "broken"],
+    "messageRegex": ".*500.*|.*502.*|.*503.*|.*504.*|.*ECONNREFUSED.*"
+  },
+  {
+    "name": "Application Errors",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*TypeError.*|.*ReferenceError.*|.*SyntaxError.*"
+  }
+]

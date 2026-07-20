@@ -7,7 +7,7 @@ export default defineConfig({
   timeout: 30 * 1000,
   retries: process.env.CI ? 1 : 0,
   workers: process.env.CI ? 1 : 4,
-  reporter: [['html'], ['allure-playwright']],
+  reporter: [['line'], ['allure-playwright']],
   use: {
     baseURL: Env.get('BASE_URL'),
     trace: 'on-first-retry',

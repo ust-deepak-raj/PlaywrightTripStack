@@ -3,11 +3,11 @@ name: Playwright CI
 on:
   push:
     branches:
-      - main      # Change if your default branch is different
+      - master      # Change if your default branch is different
 
   pull_request:
     branches:
-      - main
+      - master
 
   workflow_dispatch:
 

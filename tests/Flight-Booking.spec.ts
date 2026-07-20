@@ -3,7 +3,7 @@ import { Env } from '../utils/Env';
 import { User } from '../test-data/user';
 import { Logger } from '../utils/Logger';
 
-test('Flight Booking Test', async ({ tripStackFlights }) => {
+test.only('Flight Booking Test', async ({ tripStackFlights }) => {
   Logger.info('Flight Booking Test Starts..');
   await tripStackFlights.openWebsite();
 

@@ -14,10 +14,19 @@ export class FlightSeatMapPage {
     }
 
     async bookSeat(seat: string) {
-        await this.selectSeat(seat).click();
-        await expect(await this.selectSeat(seat)).toHaveAttribute('aria-pressed','true');
-        await expect(await this.continueButton()).toBeEnabled();
-        await this.continueButton().click();
-    }
+    const seatLocator = this.selectSeat(seat);
+
+    await expect(seatLocator).toBeVisible();
+    await expect(seatLocator).toBeEnabled();
+
+    await seatLocator.scrollIntoViewIfNeeded();
+    await seatLocator.hover();
+    await seatLocator.click();
+
+    await expect(seatLocator).toHaveAttribute('aria-pressed', 'true');
+
+    await expect(this.continueButton()).toBeEnabled();
+    await this.continueButton().click();
+}
 
 }

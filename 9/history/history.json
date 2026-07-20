@@ -1,0 +1,1 @@
+{"28160915ec6a13afc47be2f9c5d6e561:5bd835b0d6b1d4ada3b9f0db936e82c8":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"ca13504c1b59bf37","reportUrl":"https://ust-deepak-raj.github.io/PlaywrightTripStack/9/#testresult/ca13504c1b59bf37","status":"passed","time":{"start":1784560870421,"stop":1784560878345,"duration":7924}}]}}

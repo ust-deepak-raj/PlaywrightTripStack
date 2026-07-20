@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","7924","Flight Booking Test","chromium","2026-07-20","passed","2026-07-20","","Flight-Booking.spec.ts","",""

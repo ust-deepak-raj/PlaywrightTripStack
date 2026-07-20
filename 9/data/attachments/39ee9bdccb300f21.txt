@@ -1,0 +1,7 @@
+2026-07-20 15:21:10 [INFO] Flight Booking Test Starts..
+2026-07-20 15:21:13 [INFO] User Login Sucessful
+2026-07-20 15:21:14 [INFO] IndiGo 6E-494 is available and selected succesfully
+2026-07-20 15:21:15 [INFO] 10D and selected succesfully
+2026-07-20 15:21:17 [INFO] Flight Booking Sucessful
+2026-07-20 15:21:17 [INFO] Deleting Booked Flight Seat
+2026-07-20 15:21:18 [INFO] Booked Flight Seat Deleted Successfully

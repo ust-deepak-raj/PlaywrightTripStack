@@ -15,8 +15,8 @@ export class FlightSeatMapPage {
 
     async bookSeat(seat: string) {
         await this.selectSeat(seat).click();
-        expect(await this.selectSeat(seat)).toHaveAttribute('aria-pressed','true');
-        expect(await this.continueButton()).toBeEnabled();
+        await expect(await this.selectSeat(seat)).toHaveAttribute('aria-pressed','true');
+        await expect(await this.continueButton()).toBeEnabled();
         await this.continueButton().click();
     }
 
